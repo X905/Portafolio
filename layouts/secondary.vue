@@ -1,6 +1,8 @@
 <template>
   <div>
     <nuxt/>
+
+
   </div>
 </template>
 
@@ -19,6 +21,12 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+#fixed-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .button--green {
