@@ -9,13 +9,15 @@
       </h2>
       <div class="links">
         <nuxt-link to="/about" class="button--green">Sobre Mí</nuxt-link>
-        <a
+        <nuxt-link to="#blog" class="button--grey">Blog</nuxt-link>
+
+        <!-- <a
           href="https://nuxtjs.org/"
           class="button--green">Documentation</a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
-          class="button--grey">GitHub</a>
+          class="button--grey">GitHub</a> -->
       </div>
     </div>
   </section>
@@ -31,6 +33,17 @@ export default {
   mounted() {
     var back = this.$route.params.slug
     console.log(back);
+  },
+  transition (to, from) {
+    if (!from) { return 'slide-left' }
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
+   asyncData () {
+    return new Promise((resolve) => {
+      setTimeout(function () {
+        resolve({})
+      }, 900)
+    })
   }
 }
 </script>

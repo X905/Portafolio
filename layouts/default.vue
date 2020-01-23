@@ -16,6 +16,13 @@ html {
   box-sizing: border-box;
 }
 
+@media (max-width: 360px) {
+  .subtitle{
+    font-size: 26px;
+  }
+}
+
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -73,6 +80,16 @@ html {
   color: #565656;
   word-spacing: 5px;
   padding-bottom: 15px;
+}
+
+.page-enter-active, .page-leave-active{
+  transition: all 0.5s;
+  
+}
+
+.page-enter, .page-leave-active{
+  opacity: 5;
+  transform: scale(2);
 }
 
 .links {

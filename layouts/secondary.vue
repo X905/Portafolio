@@ -75,12 +75,30 @@ html {
   letter-spacing: 1px;
 }
 
+
+
+.page-enter-active, .page-leave-active{
+  transition: all 0.5s;
+  
+}
+
+.page-enter, .page-leave-active{
+  opacity: 5;
+  transform: scale(2);
+}
+
 .subtitle {
   font-weight: 300;
   font-size: 42px;
   color: #565656;
   word-spacing: 5px;
   padding-bottom: 15px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .subtitle{
+    font-size: 26px;
+  }
 }
 
 .links {
