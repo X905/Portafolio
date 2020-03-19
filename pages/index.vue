@@ -19,6 +19,7 @@
           target="_blank"
           class="button--grey">GitHub</a> -->
       </div>
+
     </div>
   </section>
 </template>
@@ -27,6 +28,7 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  layout:'secondary',
   components: {
     AppLogo
   },
@@ -44,6 +46,12 @@ export default {
         resolve({})
       }, 900)
     })
+  },
+   head: {
+    title: 'Inicio - Angel Castillo',
+    meta: [
+      { hid: 'portafolio', name: 'portafolio', content: 'Soy Daniel y este es mi portafolio' }
+    ]
   }
 }
 </script>

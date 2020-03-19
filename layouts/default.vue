@@ -82,15 +82,7 @@ html {
   padding-bottom: 15px;
 }
 
-.page-enter-active, .page-leave-active{
-  transition: all 0.5s;
-  
-}
 
-.page-enter, .page-leave-active{
-  opacity: 5;
-  transform: scale(2);
-}
 
 .links {
   padding-top: 15px;

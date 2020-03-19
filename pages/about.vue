@@ -1,9 +1,18 @@
 <template>
   <section class="container">
+    <div>
     <h2 class="subtitle">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique totam voluptas aspernatur cum. Dignissimos perspiciatis saepe, eaque, quasi debitis nulla odio incidunt dolore nesciunt, enim non tempora voluptates quis delectus.
+        Aún estoy trabajando en ello
     </h2>
+    <div class="links">
+      <a target="_blank" href="https://github.com/x905" class="button--grey" >GitHub</a>
+      <a target="_blank" href="https://www.linkedin.com/in/angeldanielcastillo/" class="button--grey">LinkedIn</a>
+    </div>
+
+    </div>
+
     <nuxt-link  to="/?back=true" id="fixed-btn" class="button--green">Regresar</nuxt-link>
+
   </section>
 </template>
 
@@ -17,7 +26,15 @@
         resolve({})
       }, 900)
     })
+    },
+    head: {
+    title: 'Sobre mi - Angel Castillo',
+    meta: [
+      { hid: 'portafolio', name: 'portafolio', content: 'Descripcion' }
+    ]
   }
+
+
   }
-  
+
 </script>
